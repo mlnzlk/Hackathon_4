@@ -6,4 +6,15 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+
+  & > img {
+    width: 108px;
+    margin-bottom: 36px;
+  }
+
+  & > p {
+    color: #ffffff;
+    font-size: 14px;
+  }
 `;
