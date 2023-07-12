@@ -42,3 +42,8 @@ export const TimeDesc = styled.p`
   font-weight: 600;
   text-align: center;
 `;
+
+export const ModalTxt = styled.p`
+  font-size: 14px;
+  margin: 10px 0 16px;
+`;
