@@ -4,15 +4,6 @@ import reset from "styled-reset";
 export const GlobalStyle = createGlobalStyle`
   ${reset}
 
-  :root {
-    min-width: 1000px;
-    overflow-y: scroll;
-  }
-
-  html, body, p, span, button, a, li, select {
-    font-family: 'Pretendard'; 
-  }
-
   button {
     border: none;
     padding: 0;
