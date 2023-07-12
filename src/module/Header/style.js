@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import IconSearchMini from "../../assets/icon-search-mini.svg";
 
 export const HeaderWrap = styled.header`
   width: 100%;
@@ -47,11 +48,12 @@ export const ChatWrap = styled.header`
   top: 0;
   padding: 70px 20px 12px;
   box-sizing: border-box;
+  background-color: ${(props) => props.theme.color.gray.g4};
+`;
+
+export const ChatWrapDiv = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.theme.color.gray.g4};
-  min-width: 390px;
-
   & > button {
     width: 24px;
 
@@ -70,6 +72,12 @@ export const ChatWrap = styled.header`
   }
 `;
 
+export const SearchWrap = styled.div`
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const ClassTitleWrap = styled.div`
   & > p {
     font-size: 14px;
@@ -86,5 +94,20 @@ export const ClassTitleWrap = styled.div`
     float: left;
     font-size: 10px;
     color: ${(props) => props.theme.color.gray.g3};
+  }
+`;
+
+export const SearchInp = styled.input`
+  border-radius: 5px;
+  border: 0.5px solid ${(props) => props.theme.color.gray.g1};
+  width: 80%;
+  background: #fff;
+  font-size: 12px;
+  padding: 9px 14px;
+
+  &::placeholder {
+    background: url(${IconSearchMini}) no-repeat;
+    padding-left: 16px;
+    color: ${(props) => props.theme.color.text.gray};
   }
 `;
