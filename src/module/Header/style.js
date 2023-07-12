@@ -6,6 +6,7 @@ export const HeaderWrap = styled.header`
   box-sizing: border-box;
   display: flex;
   background-color: #ffffff;
+  min-width: 390px;
 
   & > img {
     width: 24px;

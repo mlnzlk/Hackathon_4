@@ -21,8 +21,8 @@ const Button = ({
       fontSize={fontSize}
       className={className}
       onClick={onClick}
-      padding={padding}
-      borderRadius={borderRadius}
+      $padding={padding}
+      $borderRadius={borderRadius}
     >
       {text}
     </BtnDefault>
