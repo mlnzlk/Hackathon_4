@@ -2,6 +2,18 @@ import { styled } from "styled-components";
 
 export const Section = styled.section`
   padding: 130px 20px 0;
+  min-width: 390px;
+
+  & > button.finish {
+    width: 80%;
+    min-width: 350px;
+    max-width: 500px;
+    position: fixed;
+    z-index: -99;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 `;
 
 export const Input = styled.input`
@@ -22,5 +34,11 @@ export const Desc = styled.p`
   color: ${(props) => props.theme.color.gray.g3};
   font-size: 14px;
   font-weight: 400;
-  margin-top: 200px;
+  margin-top: 14%;
+  line-height: 1.6;
+`;
+
+export const DescImg = styled.img`
+  width: 240px;
+  margin-top: 12px;
 `;
