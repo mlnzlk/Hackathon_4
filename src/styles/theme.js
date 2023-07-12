@@ -1,12 +1,14 @@
 export const theme = {
   color: {
     main: "#8994DD",
+    text: {
+      white: "#FFFFFF",
+      black: "#000000",
+    },
     gray: {
-      g1: "#AAAAAA",
-      g2: "#F6F6F6",
+      g1: "#DFDFDF",
+      g2: "#9D9D9D",
       g3: "#666666",
-      g4: "#D9D9D9",
-      g5: "#444444",
     },
   },
 };
