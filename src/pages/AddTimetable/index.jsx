@@ -7,12 +7,15 @@ import Header from "../../module/Header";
 import * as S from "./style"
 import { useDispatch, useSelector } from "react-redux";
 import { setClassList } from "../../store/reducer/classListSlice";
+import { useLocation, useNavigate } from "react-router-dom"
 
 export default function AddTimetable() {
   const [data, setData] = useState([]);
   const [url, setUrl] = useState('')
   const dispatch = useDispatch()
   const timetable = useSelector(state => state.classList.classList)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   function parseSubject(subjectElement) {
     const internal = subjectElement.querySelector('internal').getAttribute('value');
@@ -60,7 +63,7 @@ export default function AddTimetable() {
           timetable.length ? 
             <>
               <TimetableList timetable={data} /> 
-              <Button text="완료" className="main finish" padding="19px 0" width="100%" borderRadius="10px" />
+              <Button text="완료" className="main finish" padding="19px 0" width="100%" borderRadius="10px" onClick={() => navigate(location.state ? `/profile` : `/complete`)} />
             </>
           : 
             <>

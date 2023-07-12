@@ -29,7 +29,7 @@ export default function Header({ text, num }) {
       <>
         <S.ChatWrap>
           <S.ChatWrapDiv>
-            <button>
+            <button onClick={() => navigate(-1)}>
               <img src={ChatBackBtn} alt="채팅방 리스트 페이지로 이동" />
             </button>
             <S.ClassTitleWrap>
@@ -55,8 +55,7 @@ export default function Header({ text, num }) {
   } else {
     return (
       <S.HeaderWrap>
-
-        <img src={backBtn} alt="이전 페이지로 이동" />
+        <img src={backBtn} alt="이전 페이지로 이동" onClick={() => navigate(-1)} />
         <S.Title>{text}</S.Title>
       </S.HeaderWrap>
     )

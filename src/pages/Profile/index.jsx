@@ -25,7 +25,7 @@ export default function Profile() {
           </S.ModifyBtn>
         </S.UserDesc>
         <ul>
-          <S.ProfileLi>
+          <S.ProfileLi onClick={() => navigate('/timetable', { state : true })}>
             <p>시간표 변경</p>
             <img src={iconRightArrow} alt="" />
           </S.ProfileLi>
