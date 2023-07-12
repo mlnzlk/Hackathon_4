@@ -23,6 +23,10 @@ export const UserDesc = styled.div`
   }
 `;
 
+export const ProfileSection = styled.section`
+  padding: 110px 0 0;
+`;
+
 export const ModifyBtn = styled.button`
   border-radius: 30px;
   border: 1px solid ${(props) => props.theme.color.gray.g5};
@@ -82,4 +86,23 @@ export const NameInput = styled.input`
   display: block;
   padding: 14px 6px;
   margin: 16px 0;
+`;
+
+export const PwLabel = styled.label`
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+`;
+
+export const PwInput = styled.input`
+  border-radius: 5px;
+  padding: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid ${(props) => props.theme.color.gray.g1};
+  margin-top: 12px;
+
+  &:first-of-type {
+    margin-bottom: 24px;
+  }
 `;

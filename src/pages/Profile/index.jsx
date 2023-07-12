@@ -14,7 +14,7 @@ export default function Profile() {
     <>
       <h1 className="ir">마이페이지</h1>
       <Header text="마이페이지" />
-      <section>
+      <S.ProfileSection>
         <S.UserDesc>
           <div>
             <p>홍길동님</p>
@@ -42,7 +42,7 @@ export default function Profile() {
             <img src={iconRightArrow} alt="" />
           </S.ProfileLi>
         </ul>
-      </section>
+      </S.ProfileSection>
       <Modal>
         <S.ModalTit>회원탈퇴</S.ModalTit>
         <S.ModalTit>탈퇴 시, 회원정보 및 이용기록이 모두 삭제되며, <br />계정 복구는 불가능합니다.</S.ModalTit>

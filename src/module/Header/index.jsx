@@ -11,7 +11,7 @@ import { useLocation, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 export default function Header({ text, num }) {
-  const [search, setSearch] = useState(true)
+  const [search, setSearch] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
 

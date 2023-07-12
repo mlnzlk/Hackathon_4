@@ -9,7 +9,7 @@ export const HeaderWrap = styled.header`
   padding: 70px 30px 26px;
   box-sizing: border-box;
   display: flex;
-  background-color: ${(props) => props.theme.color.gray.g4};
+  background-color: #fff;
   min-width: 390px;
   align-items: center;
 
@@ -79,6 +79,7 @@ export const SearchWrap = styled.div`
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 `;
 
 export const ClassTitleWrap = styled.div`

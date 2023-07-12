@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Section = styled.section`
-  padding: 20px;
+  padding: 130px 20px 0;
 `;
 
 export const Input = styled.input`
