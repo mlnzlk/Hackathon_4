@@ -41,6 +41,10 @@ export const ChatListTitle = styled.p`
 
 export const ChatWrap = styled.header`
   width: 100%;
+  min-width: 390px;
+  max-width: 599px;
+  position: fixed;
+  top: 0;
   padding: 70px 20px 12px;
   box-sizing: border-box;
   display: flex;
