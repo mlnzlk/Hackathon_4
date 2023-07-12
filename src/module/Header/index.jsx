@@ -7,18 +7,19 @@ import IconSearch from "../../assets/icon-search.svg"
 import IconUpArrow from "../../assets/icon-upArrow.svg"
 import IconDownArrow from "../../assets/icon-bottomArrow.svg"
 import IconClose from "../../assets/icon-close.svg"
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 export default function Header({ text, num }) {
   const [search, setSearch] = useState(true)
   const location = useLocation()
+  const navigate = useNavigate()
 
   if (location.pathname.includes('/chatlist')) {
     return (
       <S.HeaderWrap className="chatlist">
         <S.ChatListTitle>채팅</S.ChatListTitle>
-        <button>
+        <button onClick={navigate('/profile')}>
           <img src={IconSetting} alt="마이페이지로 이동" />
         </button>
       </S.HeaderWrap>
