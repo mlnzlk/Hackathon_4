@@ -3,10 +3,13 @@ import IconSearchMini from "../../assets/icon-search-mini.svg";
 
 export const HeaderWrap = styled.header`
   width: 100%;
-  padding: 70px 30px 34px;
+  min-width: 390px;
+  max-width: 599px;
+  position: fixed;
+  padding: 70px 30px 26px;
   box-sizing: border-box;
   display: flex;
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.color.gray.g4};
   min-width: 390px;
   align-items: center;
 

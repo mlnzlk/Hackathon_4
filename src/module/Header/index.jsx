@@ -19,7 +19,7 @@ export default function Header({ text, num }) {
     return (
       <S.HeaderWrap className="chatlist">
         <S.ChatListTitle>채팅</S.ChatListTitle>
-        <button onClick={navigate('/profile')}>
+        <button onClick={() => navigate('/profile')}>
           <img src={IconSetting} alt="마이페이지로 이동" />
         </button>
       </S.HeaderWrap>

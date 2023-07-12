@@ -38,3 +38,48 @@ export const ProfileLi = styled.li`
   align-items: center;
   border-bottom: 1px solid ${(props) => props.theme.color.gray.g5};
 `;
+
+export const ModalTit = styled.p`
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 8px;
+
+  &:last-of-type {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 10px 0 12px;
+  }
+`;
+
+export const ChangeSection = styled.section`
+  padding: 150px 40px;
+  text-align: left;
+
+  & > button {
+    width: 80%;
+    min-width: 350px;
+    max-width: 500px;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+`;
+
+export const NameLabel = styled.label`
+  font-size: 14px;
+  display: block;
+  font-weight: 600;
+`;
+
+export const NameInput = styled.input`
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid ${(props) => props.theme.color.gray.g1};
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  padding: 14px 6px;
+  margin: 16px 0;
+`;
