@@ -4,11 +4,20 @@ import reset from "styled-reset";
 export const GlobalStyle = createGlobalStyle`
   ${reset}
 
+  :root {
+    margin: 0 auto;
+    max-width: 599px;
+    min-width: 390px;
+    min-height : calc(var(--vh, 1vh) * 100);
+    text-align: center;
+  }
+
   button {
     border: none;
     padding: 0;
     cursor: pointer;
     background-color: transparent;
+    box-sizing: border-box;
   }
 
   a {
