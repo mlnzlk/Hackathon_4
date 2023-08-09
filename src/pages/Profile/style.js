@@ -36,6 +36,7 @@ export const ModifyBtn = styled.button`
 
 export const ProfileLi = styled.li`
   padding: 16px 30px;
+  line-height: 1.2;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
