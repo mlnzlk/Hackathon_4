@@ -15,7 +15,7 @@ export default function Header({ text, num }) {
   const location = useLocation()
   const navigate = useNavigate()
 
-  if (location.pathname.includes('/chatlist')) {
+  if (location.pathname.includes('/list')) {
     return (
       <S.HeaderWrap className="chatlist">
         <S.ChatListTitle>채팅</S.ChatListTitle>
