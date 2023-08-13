@@ -1,36 +1,25 @@
-import img from './img.svg';
-import {Link }from 'react-router-dom';
-import './App.css';
-import {useState} from "react";
-import axios from "axios";
-// 서버와 통신할때 spa 유지하면서 ajax
-import Button from "./button";
-const ComSignup= () => {
+import Logo from "../../../assets/logo.png";
+import Button from "../../../module/Button";
+import { Link } from "react-router-dom";
+import "./App.css";
 
-    return (
-        <div className='complete_ComSignup'>
-            <header className="App-header">
-                <img src={img} alt="xx"/>
-                <p></p>
-                <div className='ComSignup'>
-                    회원가입 완료
-                </div>
-                <p></p>
-                <p className='a' >친구들과 대화를 통해 필요한 정보를 찾아보세요.</p>
-                {/*로그인페이지 연결하면 될듯?*/}
-
-                <Link to ='/login'>
-                    <Button
-                    text={'로그인'}
-                    backgroundColor ={'rgb(152,98,222)'}
-                    outlined ={true}
-                    borderColor ={'rgb(236,240,243)'}
-                />
-                </Link>
-            </header>
-        </div>
-
-    );
+const ComSignup = () => {
+  return (
+    <section className="complete_ComSignup">
+      <img src={Logo} alt="" className="logoImg" />
+      <p className="ComSignup">회원가입 완료</p>
+      <p className="a">친구들과 대화를 통해 필요한 정보를 찾아보세요.</p>
+      <Link to="/login">
+        <Button
+          text="로그인하기"
+          className="main"
+          padding="17px 58px"
+          fontSize="18px"
+          borderRadius="30px"
+        />
+      </Link>
+    </section>
+  );
 };
 
 export default ComSignup;
