@@ -3,8 +3,6 @@ import test from "./test.svg";
 import Modal from "./modal";
 import NewModal from "./newmodal";
 import "./App.css";
-import axios from "axios";
-import { Link } from "react-router-dom";
 
 export default function ChatList() {
   const [isModalOpen, setIsModalOpen] = useState(false);

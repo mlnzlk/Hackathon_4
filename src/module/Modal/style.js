@@ -16,6 +16,7 @@ export const Wrapper = styled.div`
 
 export const ModalStyle = styled.div`
   width: 300px;
+  min-width: 294px;
   padding: 20px 0 14px;
   box-sizing: border-box;
   background-color: ${(props) => props.theme.color.text.white};

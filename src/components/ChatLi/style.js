@@ -60,3 +60,18 @@ export const Count = styled.span`
   margin-top: 2px;
   color: ${(props) => props.theme.color.text.white};
 `;
+
+export const ModalTitle = styled.p`
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  margin: 6px 0 10px;
+  font-weight: 700;
+`;
+
+export const ModalText = styled.p`
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 14px;
+`;
